@@ -6,9 +6,8 @@ function analizarTexto(texto) {
     let vocales = 0;
     let consonantes = 0;
 
-    const textoLower = texto.toLowerCase();
 
-    for (let letra of textoLower) {
+    for (let letra of texto.toLowerCase()) {
         if ("aeiou".includes(letra)) {
             vocales++;
         } else if (letra >= "a" && letra <= "z") {
